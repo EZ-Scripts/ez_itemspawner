@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="item-container">
+        <div id="search-bar">
+            <input type="text" id="search" placeholder="Search items..." oninput="filterItems()">
+        </div>
+        <div id="item-grid">
+            <!-- Items will be dynamically injected here -->
+        </div>
+        <button id="next-button">Next</button>
+        <button id="deselect-all-button">Deselect All</button>
+    </div>
+
+    <!-- Modal for Preview -->
+    <div id="preview-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Preview Items</h2>
+            <div id="preview-list"></div>
+
+            <label for="player-list" class="modal-label">Select Player:</label>
+            <select id="player-list" class="big-selector">
+                <option value="self">Yourself</option>
+                <!-- Player list will be dynamically populated here -->
+            </select>
+
+            <div class="modal-actions">
+                <button id="spawn-button" class="big-button">Spawn Items</button>
+                <button id="close-modal" class="big-button secondary">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
