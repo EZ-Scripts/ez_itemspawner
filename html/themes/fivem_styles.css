@@ -1,18 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 :root {
-    --primary-color: rgba(50, 30, 20, 0.85); /* Warm brown for secondary elements */
-    --primary-border-color: rgba(215, 55, 45, 0.8); /* Subtle red border for depth */
-    --button-color: rgba(185, 45, 35, 0.85); /* Deep red for buttons */
-    --tertiary-color: rgba(30, 15, 10, 0.95); /* Shadowy deep brown */
-    --error-color: rgba(215, 40, 30, 1); /* Darker red for error messages */
+    --primary-color: rgba(0, 4, 37, 0.486); /* Vibrant orange for background */
+    --primary-border-color: rgba(255, 140, 0, 0.9); /* Bold orange for border */
+    --button-color: rgba(255, 140, 0, 0.85); /* Deep orange for buttons */
+    --tertiary-color: rgba(200, 70, 20, 0.95); /* Shadowy orange-brown */
+    --error-color: rgba(255, 60, 0, 1); /* Darker red-orange for error messages */
 }
 
 /* General Styles */
 body {
     display: none;
-    font-family: "Playfair Display", serif;
+    font-family: "Rubik", serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
@@ -258,7 +256,7 @@ input::-webkit-inner-spin-button {
 button {
     font-size: 1.5em;
     cursor: pointer;
-    font-family: "Rye", serif;
+    font-family: "Rubik", serif;
     font-weight: 400;
     font-style: normal;
 }
