@@ -1,6 +1,7 @@
 SConfig = {}
 WEBHOOK_URL = "https://discord.com/api/webhooks/1320178416246325268/WREmx7LQgiFuMSS7GM2v0Y0u0DW66JXax1blZBNc7sMBMz5vvt-HQZWKbVm04y8XgC3F" -- Discord Webhook URL
 local Core = exports.vorp_core:GetCore()
+--local QBCore = exports['qb-core']:GetCoreObject()
 
 SConfig.Notify = function(msg, source)
     if source then
