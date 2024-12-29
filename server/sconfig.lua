@@ -32,7 +32,7 @@ SConfig.AddItem = function(source, item, amount, type)
         VORPInv:addItem(source, item, amount)
     elseif type == "weapon" then
         local canCarry = VORPInv:canCarryWeapons(source, amount, nil, item)
-        if canCarry then
+        if not canCarry then
             return false
         end
         local result = VORPInv:createWeapon(source, item, {})
