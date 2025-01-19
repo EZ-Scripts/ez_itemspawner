@@ -10,13 +10,9 @@ version "1.0"
 description "Item Spawner for Fivem and RedM"
 
 files {
-    'html/*.html',
-    'html/*.js',
-    'html/*.css',
+    'html/*.*',
 }
 ui_page 'html/index.html'
 
 server_scripts { '@oxmysql/lib/MySQL.lua', 'server/*.lua' }
 client_scripts {'client/*.lua', }
-
-
