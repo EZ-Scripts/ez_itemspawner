@@ -1,5 +1,9 @@
 SConfig = {}
+<<<<<<< HEAD
 WEBHOOK_URL = "https://discord.com/api/webhooks/.." -- Discord Webhook URL
+=======
+WEBHOOK_URL = "https://discord.com/api/webhooks/..." -- Discord Webhook URL
+>>>>>>> dafc4f542ee09695030c154738fbfd5ab4d38f2f
 local Core = exports.vorp_core:GetCore()
 --local QBCore = exports['qb-core']:GetCoreObject()
 
