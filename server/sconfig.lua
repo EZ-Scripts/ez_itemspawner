@@ -35,9 +35,11 @@ SConfig.AddItem = function(source, item, amount, type)
         if not canCarry then
             return false
         end
-        local result = VORPInv:createWeapon(source, item, {})
-        if not result then
-            return false
+        for i=1, amount do
+            local result = VORPInv:createWeapon(source, item, {})
+            if not result then
+                return false
+            end
         end
     end
     return true
