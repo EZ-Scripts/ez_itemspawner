@@ -38,3 +38,5 @@ RegisterNUICallback("spawnItems", function(data, cb)
     TriggerServerEvent("ez_itemspawner:server:spawnItems", data)
     cb("ok")
 end)
+
+TriggerEvent("chat:addSuggestion", "/"..CommandName, "Open the item spawner menu", {})
