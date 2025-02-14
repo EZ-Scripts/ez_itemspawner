@@ -1,8 +1,8 @@
 Items = SConfig.GetItems()
 
--- Get nearby players from a player
---- @param source number The source of the player
-local function getNearbyPlayers(source)
+-- Get players in server except the source
+--- @param source number|nil The source to exclude (can be nil)
+local function getPlayers(source)
     local players = {}
     for _, player in ipairs(GetPlayers()) do
         local ply = tonumber(player)
@@ -20,7 +20,7 @@ local function openSpawner(source)
     if not SConfig.PermissionCheck(source) then
         return SConfig.Notify(SConfig.Locale.NoPermission, source)
     end
-    local players = getNearbyPlayers(source)
+    local players = getPlayers(source)
     TriggerClientEvent("ez_itemspawner:open", source, players, Items)
 end
 
