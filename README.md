@@ -1,5 +1,6 @@
 # [FiveM & RedM] Ez Item Spawner
 A pretty admin menu for admins to spawn items for players in the server. Add amount per item you select and select player by name.
+Includes discord log option!
 
 ## Discord Invite Link
 https://discord.ezscripts.org/
