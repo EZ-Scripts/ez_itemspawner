@@ -3,7 +3,7 @@
 SConfig = {}
 
 -- Discord Webhook URL
-WEBHOOK_URL = "https://discord.com/api/webhooks/..."
+WEBHOOK_URL = GetConvar("ez_itemspawner_webhook", "")
 
 -- Core object from vorp_core
 local Core = exports.vorp_core:GetCore()
@@ -23,10 +23,16 @@ end
 SConfig.PermissionCheck = function(source)
     local user = Core.getUser(source)
     if not user then return false end
-    if user.getGroup == "admin" then
-        return true
-    end
-    return false
+    local StaffGroups = {
+        ["owner"] = true,
+        ["superadmin"] = true,
+        ["admin"] = true,
+        ["headmoderator"] = true,
+        ["moderator"] = false,
+        ["discordmoderator"] = false,
+        ["helper"] = false,
+    }
+    return StaffGroups[user.getGroup] or false
 end
 
 -- Function to add an item or weapon to a user's inventory
@@ -117,7 +123,7 @@ SConfig.GetItems = function()
             type = "weapon",
         },
         {
-            label = "Hachet",
+            label = "The RedWolf Spear",
             item = "WEAPON_MELEE_HATCHET",
             type = "weapon",
         },
@@ -367,7 +373,7 @@ SConfig.GetItems = function()
             type = "weapon",
         },
         {
-            label = "Machete Collector",
+            label = "Joe T´s Aguila Machete",
             item = "WEAPON_MELEE_MACHETE_COLLECTOR",
             type = "weapon",
         },
@@ -449,7 +455,5 @@ SConfig.Locale = {
     CantCarry = "You can't carry that much!",
     ReceivedItem = "Received item ",
     ItemSpawnerTitle = "Item Spawner",
-    ForPlayer = "For player ",
-    ByAdmin = "By admin ",
     SpawnedItems = "Spawned items",
 }
