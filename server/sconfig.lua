@@ -187,11 +187,11 @@ SConfig.GetItems = function()
             item = "WEAPON_PISTOL_VOLCANIC",
             type = "weapon",
         },
-        {
+        --[[{
             label = "Pistol M1899",
             item = "WEAPON_PISTOL_M1899",
             type = "weapon",
-        },
+        },]]
         {
             label = "Revolver Schofield",
             item = "WEAPON_REVOLVER_SCHOFIELD",
