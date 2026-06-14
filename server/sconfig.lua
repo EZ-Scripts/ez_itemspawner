@@ -317,11 +317,11 @@ SConfig.GetItems = function()
             item = "WEAPON_KIT_BINOCULARS_IMPROVED",
             type = "weapon",
         },
-        {
+        --[[{
             label = "Knife Trader",
             item = "WEAPON_MELEE_KNIFE_TRADER",
             type = "weapon",
-        },
+        },]]
         {
             label = "Binoculars",
             item = "WEAPON_KIT_BINOCULARS",
