@@ -202,11 +202,11 @@ SConfig.GetItems = function()
             item = "WEAPON_REVOLVER_NAVY",
             type = "weapon",
         },
-        {
+        --[[{
             label = "Revolver Navy Crossover",
             item = "WEAPON_REVOLVER_NAVY_CROSSOVER",
             type = "weapon",
-        },
+        },]]
         {
             label = "Revolver Lemat",
             item = "WEAPON_REVOLVER_LEMAT",
