@@ -102,11 +102,11 @@ SConfig.GetItems = function()
             item = "WEAPON_MELEE_KNIFE_CIVIL_WAR",
             type = "weapon",
         },
-        {
+        --[[{
             label = "Knife Jawbone",
             item = "WEAPON_MELEE_KNIFE_JAWBONE",
             type = "weapon",
-        },
+        },]]
         {
             label = "Knife Miner",
             item = "WEAPON_MELEE_KNIFE_MINER",
